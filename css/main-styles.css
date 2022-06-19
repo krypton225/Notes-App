@@ -1,0 +1,86 @@
+/*
+    * ******************** Index of the page ********************
+    * - astrik
+    * - root
+    * - html
+    * - body
+    * - h1,h2,h3,h4,h5,h6
+    * - a
+    * - li
+    * - img
+    * - container and media query of it
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color-orange: hsl(13, 68%, 63%);
+  --second-color-blue: hsl(234, 20%, 30%);
+  --third-color-green: hsl(151, 24, 60%);
+  --fourth-color-yellow: hsl(37, 79, 75%);
+  --fifth-color-eggshell: hsl(52, 50, 91%);
+  --main-font-size: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: var(--main-font-size);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--second-color-blue);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
