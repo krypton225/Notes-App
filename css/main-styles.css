@@ -42,6 +42,7 @@ body {
   font-family: "El Messiri", sans-serif, "Cairo", sans-serif;
   font-weight: 500;
   background-color: var(--second-color-blue);
+  overflow-x: hidden;
 }
 
 .layer {

@@ -24,6 +24,7 @@
 
     <!-- * There are all CSS styles files -->
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/card.css">
 
     <!-- * There are all CSS files for fonts we used -->
     <link rel="stylesheet" href="css/cairo-font.css">
@@ -63,9 +64,22 @@
         </header> <!-- ./container__header -->
 
         <div class="container__content">
-            <div class="container__content__card card-static">
-                <!-- <i class="far fa-plus-square"></i> -->
+            <div class="container__content__card">
+                <h4 class="container__content__card__title">عنوان المُلاحظة</h4>
+
+                <div class="container__content__card__icon">
+                    <i class="fas fa-ellipsis-h"></i>
+                    <div class="container__content__card__icon__content">
+                        <p class="container__content__card__icon__content__edit">تعديل</p>
+                        <p class="container__content__card__icon__content__delete">حذف</p>
+                    </div> <!-- ./container__content__card__icon__content -->
+                </div> <!-- ./container__content__card__icon -->
+
+                <div class="container__content__card__body">
+                    قشطا يا خالودة، أنت مُبرمج عظيم
+                </div> <!-- ./container__content__card__body -->
             </div> <!-- ./container__content__card -->
+
         </div> <!-- ./container__content -->
     </section> <!-- ./container -->
     <script src="js/app.js"></script>
