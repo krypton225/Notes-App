@@ -11,3 +11,12 @@ const modalHeaderOpen = () => {
 };
 
 modalHeaderOpen();
+
+const closeHeaderModal = () => {
+  document.getElementById("closeHeaderModal").addEventListener("click", (e) => {
+    e.preventDefault();
+    document
+      .getElementById("closeHeaderModal")
+      .classList.remove("header-modal-open");
+  });
+};
