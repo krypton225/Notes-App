@@ -38,14 +38,14 @@
   border-radius: 10px;
   background-color: var(--third-color-green);
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 50%;
   visibility: hidden;
   opacity: 0;
   transform: translate(-50%, -50%);
   box-shadow: 0 10px 15px 8px rgba(0, 0, 0, 0.164);
   z-index: 1000;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 .header-modal-open {
