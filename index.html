@@ -37,29 +37,34 @@
 <body>
     <section id="container" class="container">
         <header class="container__header">
-            <h2 class="container__header__title">مُذكرات كتابية</h2>
-            <button id="addNewNoteBtn" class="container__header__title__add-btn">إضافة مُلاحظة جديدة</button>
+            <h2 class="container__header__title">مُذكراتٌ كتابيةٌ</h2>
+            <button id="addNewNoteBtn" class="container__header__title__add-btn">
+                <i class="fas fa-plus"></i>
+            </button> <!-- ./container__header__title__add-btn -->
 
             <div class="container__header__modal" id="headerModal">
                 <h3 class="container__header__modal__title">إضافة مُلاحظة جديدة</h3>
                 <i id="closeHeaderModal" class="fas fa-times"></i>
 
-                <form id="formModal" class="container__header__modal__form">
+                <form id="formModal" class="container__header__modal__form" autocomplete="off">
                     <div class="container__header__modal__form__name">
-                        <input type="text" name="" id="header-modal-name" placeholder="إسم المُلاحظة المُراد إضافتُها">
+                        <input type="text" name="" id="header-modal-name"
+                            placeholder="عنوان المُلاحظة المُراد إضافتُها">
                     </div> <!-- ./container__header__modal__form__name -->
 
                     <div class="container__header__modal__form__content">
-                        <input type="text" name="" id="header-modal-content" placeholder="المُحتوى">
+                        <textarea rows="6" type="text" name="" id="header-modal-content"
+                            placeholder="المُحتوى"></textarea>
                     </div> <!-- ./container__header__modal__form__content -->
 
+                    <input type="submit" class="container__header__modal__form__submit" id="addNote" value="إضافة">
                 </form> <!-- ./container__header__modal__form -->
             </div> <!-- ./container__header__modal -->
         </header> <!-- ./container__header -->
 
         <div class="container__content">
             <div class="container__content__card card-static">
-                <i class="far fa-plus-square"></i>
+                <!-- <i class="far fa-plus-square"></i> -->
             </div> <!-- ./container__content__card -->
         </div> <!-- ./container__content -->
     </section> <!-- ./container -->
