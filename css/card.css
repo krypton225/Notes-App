@@ -3,7 +3,7 @@
   padding-bottom: 20px;
   margin-top: 3rem;
   display: grid;
-  gap: 1rem;
+  gap: 20px;
 }
 
 @media (min-width: 600px) {
@@ -19,8 +19,10 @@
 }
 
 .container__content__card {
-  position: relative;
+  width: 26rem;
   height: 20vh;
+  /* margin: auto; */
+  position: relative;
   padding: 16px 0;
   border-radius: 6px;
   display: flex;
@@ -28,7 +30,20 @@
   justify-content: space-evenly;
   align-items: center;
   font-size: 1.5rem;
+  overflow: hidden;
   background-color: var(--third-color-green);
+}
+
+@media (max-width: 600px) {
+  .container__content__card {
+    margin: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .container__content__card {
+    width: 80%;
+  }
 }
 
 .container__content__card__icon > i {
