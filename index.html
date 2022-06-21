@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
     <!-- * There are all meta data which we used in app -->
@@ -20,8 +20,13 @@
     <!-- * There are all main CSS files -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/cairo-font.css">
     <link rel="stylesheet" href="css/main-styles.css">
+
+    <!-- * There are all CSS styles files -->
+    <link rel="stylesheet" href="css/header.css">
+
+    <!-- * There are all CSS files for fonts we used -->
+    <link rel="stylesheet" href="css/cairo-font.css">
 
     <!-- * This is html5shiv.js file -->
     <!--[if lt IE 9]>
@@ -30,6 +35,34 @@
 </head>
 
 <body>
+    <section id="container" class="container">
+        <header class="container__header">
+            <h2 class="container__header__title">مُذكرات كتابية</h2>
+            <button id="addNewNoteBtn" class="container__header__title__add-btn">إضافة مُلاحظة جديدة</button>
+
+            <div class="container__header__modal" id="headerModal">
+                <h3 class="container__header__modal__title">إضافة مُلاحظة جديدة</h3>
+                <i id="closeHeaderModal" class="fas fa-times"></i>
+
+                <form id="formModal" class="container__header__modal__form">
+                    <div class="container__header__modal__form__name">
+                        <input type="text" name="" id="header-modal-name" placeholder="إسم المُلاحظة المُراد إضافتُها">
+                    </div> <!-- ./container__header__modal__form__name -->
+
+                    <div class="container__header__modal__form__content">
+                        <input type="text" name="" id="header-modal-content" placeholder="المُحتوى">
+                    </div> <!-- ./container__header__modal__form__content -->
+
+                </form> <!-- ./container__header__modal__form -->
+            </div> <!-- ./container__header__modal -->
+        </header> <!-- ./container__header -->
+
+        <div class="container__content">
+            <div class="container__content__card card-static">
+                <i class="far fa-plus-square"></i>
+            </div> <!-- ./container__content__card -->
+        </div> <!-- ./container__content -->
+    </section> <!-- ./container -->
     <script src="js/app.js"></script>
 </body>
 
