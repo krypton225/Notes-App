@@ -16,8 +16,7 @@ class Note {
             <div class="container__content__card__icon">
                 <i class="fas fa-ellipsis-h"></i>
                 <div class="container__content__card__icon__content">
-                    <p class="container__content__card__icon__content__edit">تعديل</p>
-                    <p class="container__content__card__icon__content__delete">حذف</p>
+                    <button class="container__content__card__icon__content__delete" onclick="removeNote(this)">حذف</button>
                 </div> <!-- ./container__content__card__icon__content -->
             </div> <!-- ./container__content__card__icon -->
 
@@ -81,3 +80,8 @@ addNoteBtn.addEventListener("click", (e) => {
     alert("Please, Enter all inputs!");
   }
 });
+
+// * For removing the element from DOM.
+let removeNote = (currNote) => {
+  currNote.parentElement.parentElement.parentElement.remove();
+};
