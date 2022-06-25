@@ -81,8 +81,12 @@
   transform: scale(1);
 }
 
-.container__content__card__icon__content > p {
+.container__content__card__icon__content > button {
   width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--fifth-color-eggshell);
   cursor: pointer;
 }
 
